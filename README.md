@@ -19,6 +19,13 @@ Use with one of the following browser extensions:
 Release Notes
 =============
 
+Version 1.2
+-----------
+_Released 2012-12-14_
+
+*	Updated to work with v13. From this point on, no site styles prior to v13 will be supported. This includes Throwback Mode.
+*	Added button to remove a recipient
+
 Version 1.1
 -----------
 _Released 2012-05-15_
@@ -26,6 +33,8 @@ _Released 2012-05-15_
 *	Error messages are now properly conveyed when thrown
 *	Measures taken to prevent a message being sent multiple times to the same user from a single message
 
+Version 1.0
+-----------
 _Released 2012-05-13_
 
 *	Initial release
