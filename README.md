@@ -10,18 +10,20 @@ Use with one of the following browser extensions:
 
 ### Google Chrome ###
 *	[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
-*	Convert script to Google Chrome extension:
-
-	>1. Save the script (the `*.user.js` file) to your computer.
-	>2. In Chrome, go to _Tools > Extensions_.
-	>3. Drag/drop the user script file onto the _Extensions_ page.
 
 Release Notes
 =============
 
+Version 1.2.1
+-------------
+_Released 2014-06-24_
+
+*	Removed script functionality when replying to a PM
+*	Updated error notification to use new, larger character limit
+
 Version 1.2
 -----------
-_Released 2012-12-14_
+_Released 2013-12-14_
 
 *	Updated to work with v13. From this point on, no site styles prior to v13 will be supported. This includes Throwback Mode.
 *	Added button to remove a recipient

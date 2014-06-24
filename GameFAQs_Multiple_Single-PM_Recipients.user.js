@@ -2,13 +2,14 @@
 // @name        GameFAQs Multiple Single-PM Recipients
 // @namespace   OTACON120
 // @author      OTACON120
-// @version     1.2
+// @version     1.2.1
 // @description Allow multiple recipients for one PM to be set
 // @website     http://otacon120.com/scripts/multiple-single-pm-recipients/
 // @updateURL   http://userscripts.org/scripts/source/133290.meta.js
 // @downloadURL http://userscripts.org/scripts/source/133290.user.js
 // @include     http://www.gamefaqs.com/pm/new*
 // @match       http://www.gamefaqs.com/pm/new*
+// @exclude     http://www.gamefaqs.com/pm/new?reply*
 // ==/UserScript==
 var pmForm         = document.getElementById( 'content' ).getElementsByTagName( 'form' )[0],
 	recips         = pmForm.getElementsByClassName( 'body' )[0],
@@ -93,8 +94,8 @@ function sendPMs() {
 			alert( 'The minimum length of a message is 3 characters. Your current message is ' + pmMessage.length + ' characters.' );
 			return;
 
-		case ( pmMessage.length > 1024 ):
-			alert( 'The maximum length of a message is 1024 characters. Your current message is ' + pmMessage.length + ' characters.' );
+		case ( pmMessage.length > 4096 ):
+			alert( 'The maximum length of a message is 4096 characters. Your current message is ' + pmMessage.length + ' characters.' );
 			return;
 	}
 	for ( x = 1; x < recipInner.length; x++ ) {
